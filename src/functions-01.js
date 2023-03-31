@@ -18,7 +18,7 @@
  */
 function nameShuffle(str) {
   // write your code here & return value
-  let splitString = str.split(' ');
+  const splitString = str.split(' ');
 
   return `${splitString[1]}, ${splitString[0]}`;
 }
@@ -39,10 +39,8 @@ function nameShuffle(str) {
  */
 function isStrangePair(str1, str2) {
   // write your code here & return value
-  if (str1[0] === str2[str2.length - 1])
-    return true;
-  else
-    return false;
+  if (str1[0] === str2[str2.length - 1]) return true;
+  return false;
 }
 
 /**
@@ -69,11 +67,12 @@ function convertToDecimal(percent) {
  */
 function checkSameSum(a1, a2) {
   // write your code here & return value
-  let sum1 = 0, sum2 = 0;
-  a1.forEach(e => {
+  let sum1 = 0; let
+    sum2 = 0;
+  a1.forEach((e) => {
     sum1 += e;
   });
-  a2.forEach(e => {
+  a2.forEach((e) => {
     sum2 += e;
   });
 
@@ -89,9 +88,7 @@ function checkSameSum(a1, a2) {
  */
 function saveLogin(name) {
   // write your code here
-  return () => {
-    return name;
-  }
+  return () => name;
 }
 
 module.exports = {
